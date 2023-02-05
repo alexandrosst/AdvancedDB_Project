@@ -1,9 +1,9 @@
 # AdvancedDB Project
 ## Σύντομη περιγραφή
-Το παρόν Project υλοποιήθηκε στο πλαίσιο του μάθηματος "Προχωρημένα Θέματα Βάσεων Δεδομένων" του 9ου εξαμήνου. Η εκφώνηση της εργασίας βρίσκεται [εδώ](https://helios.ntua.gr/pluginfile.php/175280/mod_resource/content/2/AdvancedDB_project_2022.pdf).
+<p align="justify">Το παρόν Project υλοποιήθηκε στο πλαίσιο του μάθηματος "Προχωρημένα Θέματα Βάσεων Δεδομένων" του 9ου εξαμήνου. Η εκφώνηση της εργασίας βρίσκεται [εδώ](https://helios.ntua.gr/pluginfile.php/175280/mod_resource/content/2/AdvancedDB_project_2022.pdf).</p>
 
 ## Περιγραφή των αρχείων
-Ο κώδικας για τα queries υπάρχει σε 2 μορφές αρχείων, δηλαδή ως Python script [AdvancedDB_Project.py](https://github.com/alexandrosst/AdvancedDB_Project/blob/main/AdvancedDB_Project.py) και ως Jupyter Notebook αρχείο [AdvancedDB_Project.pynb](https://github.com/alexandrosst/AdvancedDB_Project/blob/main/AdvancedDB_Project.ipynb). Οι κώδικες των αρχείων αυτών είναι ισοδύναμοι από άποψη πληρότητας.
+<p align="justify">Ο κώδικας για τα queries υπάρχει σε 2 μορφές αρχείων, δηλαδή ως Python script <a href=https://github.com/alexandrosst/AdvancedDB_Project/blob/main/AdvancedDB_Project.py>AdvancedDB_Project.py</a> και ως Jupyter Notebook αρχείο <a href=https://github.com/alexandrosst/AdvancedDB_Project/blob/main/AdvancedDB_Project.ipynb>AdvancedDB_Project.ipynb</a>. Οι κώδικες των αρχείων αυτών είναι ισοδύναμοι από άποψη πληρότητας.<p>
 
 ## Πληροφορίες για μηχανήματα στον okeanos-knossos
 - **Μηχάνημα 1 - master:**
@@ -52,4 +52,4 @@ spark-daemon.sh stop org.apache.spark.deploy.worker.Worker 1 --webui-port 8080 -
     ```
     Ανοίγουμε το link που εμφανίζεται στο τερματικό στο browser.
 
-    Σε περίπτωση που δουλεύουμε σε μηχάνημα με δυνατότητα να τρέξει το JupyterLab σε κάποιον browser μπορούμε να αγνοήσουμε τα flags. 
+    <p align="justify">Σε περίπτωση που δουλεύουμε σε μηχάνημα με δυνατότητα να τρέξει το JupyterLab σε κάποιον browser μπορούμε να αγνοήσουμε τα flags.</p>
