@@ -7,7 +7,7 @@
 Το αρχείο [workers.sh](AdvancedDB_Project/workers.sh) περιλαμβάνει εντολές για την ενεργοποίηση και την απενεργοποίηση όλων των εργατών.
 
 ## Εκτέλεση
-- [AdvancedDB_Project.py](AdvancedDB_Project/AdvancedDB_Project.py)
+- [AdvancedDB_Project.py](./AdvancedDB_Project/AdvancedDB_Project.py)
 Μπορεί να εκτελεστεί με τη βοήθεια της εντολής:
 ```bash
 python3.8 AdvancedDB_Project.py
