@@ -8,16 +8,19 @@
 
 ## Εκτέλεση
 - [AdvancedDB_Project.py](https://github.com/alexandrosst/AdvancedDB_Project/blob/main/AdvancedDB_Project.py)
+
 Μπορεί να εκτελεστεί με τη βοήθεια της εντολής:
 ```bash
 python3.8 AdvancedDB_Project.py
 ```
 - [AdvancedDB_Project.pynb](https://github.com/alexandrosst/AdvancedDB_Project/blob/main/AdvancedDB_Project.ipynb)
+
 Μπορεί να εκτελεστεί με τη βοήθεια της εντολής:
 ```bash
 jupyter-lab --no-browser --ip="83.212.80.22"
 ```
 - [workers.sh](https://github.com/alexandrosst/AdvancedDB_Project/blob/main/workers.sh)
+
 Μπορεί να εκτελεστεί στο master machine με τη βοήθεια της εντολής:
 ```bash
 ./workers.sh [start|stop] [1|2]
