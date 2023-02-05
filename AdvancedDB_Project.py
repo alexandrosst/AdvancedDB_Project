@@ -7,7 +7,7 @@ from IPython.display import display
 import warnings
 warnings.filterwarnings('ignore')
 
-
+#change here master IPv4 address if needed
 spark = SparkSession.builder.appName("AdvancedDB_Project")\
 							.master("spark://192.168.0.1:7077").getOrCreate()
 
