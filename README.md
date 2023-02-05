@@ -4,12 +4,39 @@
 
 ## Περιγραφή των αρχείων
 Ο κώδικας για τα queries υπάρχει σε 2 μορφές αρχείων, δηλαδή ως Python script [AdvancedDB_Project.py](https://github.com/alexandrosst/AdvancedDB_Project/blob/main/AdvancedDB_Project.py) και ως Jupyter Notebook αρχείο [AdvancedDB_Project.pynb](https://github.com/alexandrosst/AdvancedDB_Project/blob/main/AdvancedDB_Project.ipynb). Οι κώδικες των αρχείων αυτών είναι ισοδύναμοι από άποψη πληρότητας.
-Το αρχείο [workers.sh](https://github.com/alexandrosst/AdvancedDB_Project/blob/main/workers.sh) περιλαμβάνει εντολές για την ενεργοποίηση και την απενεργοποίηση όλων των εργατών.
+
+## Πληροφορίες για μηχανήματα στον okeanos-knossos
+- **Μηχάνημα 1 - master:**
+
+public IPv4: 83.212.80.22
+private IPv4: 192.168.0.1
+memory: 4gb
+CPU cores: 2
+
+- **Μηχάνημα 2 - slave:**
+
+private IPv4: 192.168.0.2
+memory: 4gb
+CPU cores: 2
 
 ## Εκτέλεση
+Αρχικά, υποθέτουμε ότι έχει γίνει η εγκατάσταση του hadoop 2.7, python 3.8 και του spark 3.1.3 όπως περιγράφεται στις οδηγίες του helios.
+
+Στις εντολές παρακάτω έχει γίνει η υπόθεση ότι εργαζόμαστε στα μηχανήματα που μας παραχωρήθηκαν στον okeanos-knossos. Αν δουλεύουμε σε διαφορετικά μηχανήματα οφείλουμε να τροποποιήσουμε κατάλληλα τις διευθύνσεις IPv4 του master μηχανήματος στις εντολές για τους εργάτες, καθώς και στα αρχεία [AdvancedDB_Project.py](https://github.com/alexandrosst/AdvancedDB_Project/blob/main/AdvancedDB_Project.py) και [AdvancedDB_Project.pynb](https://github.com/alexandrosst/AdvancedDB_Project/blob/main/AdvancedDB_Project.ipynb) 
+
+Έπειτα, χρειάζεται να ενεργοποιήσουμε τους εργάτες. Σε κάθε μηχάνημα εκτελούμε την εντολή:
+```bash
+spark-daemon.sh start org.apache.spark.deploy.worker.Worker 1 --webui-port 8080 --port 65509 --cores 2 --memory 4g spark://192.168.0.1:7077
+```
+Για να απενεργοποίησουμε κάποιον εργάτη, εκτελούμε στο αντίστοιχο μηχάνημα την εντολή:
+```bash
+spark-daemon.sh stop org.apache.spark.deploy.worker.Worker 1 --webui-port 8080 --port 65509 --cores 2 --memory 4g spark://192.168.0.1:7077
+```
+
+Έπειτα, μπορούμε να προχωρήσουμε στον κώδικα για τα queries. Έχουμε δύο περιπτώσεις:
 - [AdvancedDB_Project.py](https://github.com/alexandrosst/AdvancedDB_Project/blob/main/AdvancedDB_Project.py)
 
-Μπορεί να εκτελεστεί με τη βοήθεια της εντολής:
+Μεταβαίνουμε στο path του αρχείου και εκτελούμε την εντολή:
 ```bash
 python3.8 AdvancedDB_Project.py
 ```
@@ -17,11 +44,6 @@ python3.8 AdvancedDB_Project.py
 
 Μπορεί να εκτελεστεί με τη βοήθεια της εντολής:
 ```bash
-jupyter-lab --no-browser --ip="83.212.80.22"
+jupyter-lab AdvancedDB_Project.ipynb --no-browser --ip=83.212.80.22
 ```
-- [workers.sh](https://github.com/alexandrosst/AdvancedDB_Project/blob/main/workers.sh)
-
-Μπορεί να εκτελεστεί στο master machine με τη βοήθεια της εντολής:
-```bash
-./workers.sh [start|stop] [1|2]
-```
+Σε περίπτωση που δουλεύουμε σε μηχάνημα με δυνατότητα να τρέξει το JupyterLab σε κάποιον browser μπορούμε να αγνοήσουμε τα flags. 
