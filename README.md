@@ -40,7 +40,7 @@ spark-daemon.sh stop org.apache.spark.deploy.worker.Worker 1 --webui-port 8080 -
 Έπειτα, μπορούμε να προχωρήσουμε στον κώδικα για τα queries. Έχουμε δύο περιπτώσεις:
 - [AdvancedDB_Project.py](https://github.com/alexandrosst/AdvancedDB_Project/blob/main/AdvancedDB_Project.py)
 
-    Μεταβαίνουμε στο path του αρχείου και εκτελούμε την εντολή:
+    Μπορεί να εκτελεστεί με τη βοήθεια της εντολής:
     ```bash
     python3.8 AdvancedDB_Project.py
     ```
