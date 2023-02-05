@@ -24,7 +24,7 @@
 | private IPv4 address |  192.168.0.2 |
 
 ## Εκτέλεση
-Αρχικά, υποθέτουμε ότι έχει γίνει η εγκατάσταση του hadoop 2.7, python 3.8 και του spark 3.1.3 όπως περιγράφεται στις οδηγίες του helios.
+<p align="justify">Αρχικά, υποθέτουμε ότι έχει γίνει η εγκατάσταση του hadoop 2.7, python 3.8 και του spark 3.1.3 όπως περιγράφεται στις οδηγίες του helios.</p>
 
 <p align="justify">Στις εντολές παρακάτω έχει γίνει η υπόθεση ότι εργαζόμαστε στα μηχανήματα που μας παραχωρήθηκαν στον okeanos-knossos. Αν δουλεύουμε σε διαφορετικά μηχανήματα οφείλουμε να τροποποιήσουμε κατάλληλα τις διευθύνσεις IPv4 του master μηχανήματος στις εντολές για τους εργάτες, καθώς και στα αρχεία <a href=https://github.com/alexandrosst/AdvancedDB_Project/blob/main/AdvancedDB_Project.py>AdvancedDB_Project.py</a> και <a href=https://github.com/alexandrosst/AdvancedDB_Project/blob/main/AdvancedDB_Project.ipynb>AdvancedDB_Project.ipynb</a></p>
 
