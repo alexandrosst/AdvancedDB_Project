@@ -1,12 +1,12 @@
-#AdvancedDB Project
-##Σύντομη περιγραφή
+# AdvancedDB Project
+## Σύντομη περιγραφή
 Το παρόν Project υλοποιήθηκε στο πλαίσιο του μάθηματος "Προχωρημένα Θέματα Βάσεων Δεδομένων" του 9ου εξαμήνου. Η εκφώνηση της εργασίας βρίσκεται [εδώ](https://helios.ntua.gr/pluginfile.php/175280/mod_resource/content/2/AdvancedDB_project_2022.pdf).
 
-##Περιγραφή των αρχείων
+## Περιγραφή των αρχείων
 Ο κώδικας για τα queries υπάρχει σε 2 μορφές αρχείων, δηλαδή ως Python script [AdvancedDB_Project.py](AdvancedDB_Project/AdvancedDB_Project.py) και ως Jupyter Notebook αρχείο [AdvancedDB_Project.pynb](AdvancedDB_Project/AdvancedDB_Project.pynb). Οι κώδικες των αρχείων αυτών είναι ισοδύναμοι από άποψη πληρότητας.
 Το αρχείο [workers.sh](AdvancedDB_Project/workers.sh) περιλαμβάνει εντολές για την ενεργοποίηση και την απενεργοποίηση όλων των εργατών.
 
-##Εκτέλεση
+## Εκτέλεση
 - [AdvancedDB_Project.py](AdvancedDB_Project/AdvancedDB_Project.py)
 Μπορεί να εκτελεστεί με τη βοήθεια της εντολής:
 ```bash
